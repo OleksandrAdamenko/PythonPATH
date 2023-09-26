@@ -8,14 +8,17 @@ print("Welcome to the PythonPATH, ", name, "!", sep="")
 
 keyword = input("Please, input keyword: ")
 
-while (keyword != "Keywords"):
-    keyword = input("This keyword is wrong! Please repeat your input: ")
+match keyword:
+    case "Keywords":
+        print("Python keywords: ")
 
-# match keyword:
-#     case "keyword":
-#         print()
+        for keyword in python.keywords:
+            print(keyword)
 
-print("Python keywords: ")
+# while (keyword != "Keywords"):
+#    keyword = input("This keyword is wrong! Please repeat your input: ")
 
-for keyword in python.keywords:
-    print(keyword)
+# print("Python keywords: ")
+
+# for keyword in python.keywords:
+#     print(keyword)
